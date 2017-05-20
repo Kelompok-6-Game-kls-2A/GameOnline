@@ -97,7 +97,7 @@ public class Clan extends JFrame {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					CLan frame = new CLan();					
+					Clan frame = new Clan();					
 					frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -109,7 +109,7 @@ public class Clan extends JFrame {
 	/**
 	 * Create the frame.
 	 */
-	public CLan() {
+	public Clan() {
 		
 		//Clandata kclan = new Clandata();
 		//player players = new player();
@@ -162,4 +162,84 @@ public class Clan extends JFrame {
 		label_17.setBounds(835, 251, 46, 14);
 		contentPane.add(label_17);
 		
+		JButton btnNewButton = new JButton("Daedra");
+		btnNewButton.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+				
+				
+				
+				namaclan = btnNewButton.getText();
+				Lvl = btnNewButton.getText();
+				score = btnNewButton.getText();
+				jumlahMember = btnNewButton.getText();
+				
+				if (btnNewButton.equals(btnNewButton)) {
+					System.out.println("Clan"+"\t\t"+": Daedra");
+					System.out.println("Lvl"+"\t\t"+": 50");
+					System.out.println("Score"+"\t\t"+": 3000");
+					System.out.println("jumlah Member"+"\t"+": 10/10");
+					System.out.println();
+					System.out.println("Members");
+					
+				
+				ArrayList<String> member = new ArrayList<String>(10);
+				
+				member.add("1."+"Dayat \n  Lvl 45 \t Deffensive Won = 5"+"\n  Point 10000 \t Leader");
+				member.add("\n2."+"Qhodir \n  Lvl 50 \t Deffensive Won = 5"+"\n  Point 9000 \t Elder");
+				member.add("\n3."+"Vincia \n  Lvl 39 \t Deffensive Won = 4"+"\n  Point 9000 \t Co-Leader");
+				member.add("\n4."+"Tari \n  Lvl 38 \t Deffensive Won = 4"+"\n  Point 8800");
+				member.add("\n5."+"Ica \n  Lvl 46 \t Deffensive Won = 4"+"\n  Point 8850");
+				member.add("\n6."+"Inab \n  Lvl 67 \t Deffensive Won = 3"+"\n  Point 8500");
+				member.add("\n7."+"Daus \n  Lvl 23 \t Deffensive Won = 3"+"\n  Point 7800");
+				member.add("\n8."+"Angga \n  Lvl 47 \t Deffensive Won = 3"+"\n  Point 7500");
+				member.add("\n9."+"Riki \n  Lvl 23 \t Deffensive Won = 3"+"\n  Point 7000");
+				member.add("\n10."+"Abdul \n  Lvl 10 \t Deffensive Won = 3"+"\n  Point 7100");
+				
+
+				
+				member.forEach(System.out :: println);
+				}
+			}	
+					
+		});
+
+		btnNewButton.setBounds(170, 157, 454, 23);
+		contentPane.add(btnNewButton);
 		
+		JButton button = new JButton("WarBee");
+		button.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				namaclan = btnNewButton.getText();
+				Lvl = btnNewButton.getText();
+				score = btnNewButton.getText();
+				jumlahMember = btnNewButton.getText();
+				
+				if (btnNewButton.equals(btnNewButton)) {
+					System.out.println("Clan"+"\t\t"+": WarBee");
+					System.out.println("Lvl"+"\t\t"+": 51");
+					System.out.println("Score"+"\t\t"+": 3050");
+					System.out.println("jumlah Member"+"\t"+": 10/10");
+					System.out.println();
+					System.out.println("Members");
+					
+				
+				ArrayList<String> member = new ArrayList<String>(10);
+				
+				member.add("1."+"Si won \n  Lvl 67 \t Deffensive Won = 9"+"\n  Point 25000 \t Leader");
+				member.add("\n2."+"Leeteuk \n  Lvl 60 \t Deffensive Won = 7"+"\n  Point 20000 \t Elder");
+				member.add("\n3."+"Heechul \n  Lvl 55 \t Deffensive Won = 8"+"\n  Point 18000 \t Co-Leader");
+				member.add("\n4."+"Donghae \n  Lvl 50 \t Deffensive Won = 6"+"\n  Point 17300");
+				member.add("\n5."+"Yesung \n  Lvl 46 \t Deffensive Won = 5"+"\n  Point 15000");
+				member.add("\n6."+"Kyuhyun \n  Lvl 56 \t Deffensive Won = 4"+"\n  Point 14300");
+				member.add("\n7."+"Eunhyuk \n  Lvl 45 \t Deffensive Won = 3"+"\n  Point 12000");
+				member.add("\n8."+"Ryeowook \n  Lvl 30 \t Deffensive Won = 2"+"\n  Point 5000");
+				member.add("\n9."+"Sungmin \n  Lvl 23 \t Deffensive Won = 5"+"\n  Point 4500");
+				member.add("\n10."+"Shindong \n  Lvl 10 \t Deffensive Won = 9"+"\n  Point 1998");
+				
+
+				
+				member.forEach(System.out :: println);
+				}
+			}
+		});
