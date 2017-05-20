@@ -80,7 +80,7 @@ public class Clan extends JFrame {
 	}
 	
 	public String getMember() {
-		return member;
+		return member; 
 	}
 
 	public void setMember(String member) {
