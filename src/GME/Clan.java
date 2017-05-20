@@ -243,3 +243,78 @@ public class Clan extends JFrame {
 				}
 			}
 		});
+                button.setBounds(170, 203, 454, 23);
+		contentPane.add(button);
+		
+		JButton button_1 = new JButton("Nama Clan");
+		button_1.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				namaclan = btnNewButton.getText();
+				Lvl = btnNewButton.getText();
+				score = btnNewButton.getText();
+				jumlahMember = btnNewButton.getText();
+				
+				if (btnNewButton.equals(btnNewButton)) {
+					System.out.println("Clan"+"\t\t"+": Genduts");
+					System.out.println("Lvl"+"\t\t"+": 60");
+					System.out.println("Score"+"\t\t"+": 10000");
+					System.out.println("jumlah Member"+"\t"+": 10/10");
+					System.out.println();
+					System.out.println("Members");
+					
+				
+				ArrayList<String> member = new ArrayList<String>(10);
+				
+				member.add("1."+"Aiden \n  Lvl 70 \t Deffensive Won = 9"+"\n  Point 50000 \t Leader");
+				member.add("\n2."+"Abby \n  Lvl 75 \t Deffensive Won = 9"+"\n  Point 49000 \t Elder");
+				member.add("\n3."+"Arthur \n  Lvl 60 \t Deffensive Won = 8"+"\n  Point 45000 \t Co-Leader");
+				member.add("\n4."+"Doraemon \n  Lvl 53 \t Deffensive Won = 7"+"\n  Point 34000");
+				member.add("\n5."+"Dipsy \n  Lvl 45 \t Deffensive Won = 6"+"\n  Point 13000");
+				member.add("\n6."+"Lala \n  Lvl 34 \t Deffensive Won = 5"+"\n  Point 16000");
+				member.add("\n7."+"Poo \n  Lvl 50\t Deffensive Won = 8"+"\n  Point 12500");
+				member.add("\n8."+"Duck \n  Lvl 35 \t Deffensive Won = 7"+"\n  Point 10000");
+				member.add("\n9."+"Upin \n  Lvl 20 \t Deffensive Won = 5"+"\n  Point 4000");
+				member.add("\n10."+"Ipin \n  Lvl 17 \t Deffensive Won = 3"+"\n  Point 1998");
+				
+
+				
+				member.forEach(System.out :: println);
+				}
+			}
+		});
+		button_1.setBounds(170, 247, 454, 23);
+		contentPane.add(button_1);
+		
+		JLabel label_1 = new JLabel("Top Plyayer");
+		label_1.setFont(new Font("Tahoma", Font.ITALIC, 17));
+		label_1.setBackground(Color.ORANGE);
+		label_1.setBounds(29, 127, 93, 23);
+		contentPane.add(label_1);
+		
+		JLabel lblClans = new JLabel("CLANS");
+		lblClans.setFont(new Font("Trajan Pro 3", Font.PLAIN, 80));
+		lblClans.setBackground(Color.ORANGE);
+		lblClans.setBounds(241, 27, 360, 95);
+		contentPane.add(lblClans);
+		
+		JLabel label_4 = new JLabel("Members : 10/10");
+		label_4.setBounds(682, 119, 111, 14);
+		contentPane.add(label_4);
+		
+		JLabel label_5 = new JLabel("Score");
+		label_5.setBounds(835, 119, 46, 14);
+		contentPane.add(label_5);
+		
+		JButton btnNewButton_1 = new JButton("New button");
+		btnNewButton_1.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {	
+			}
+		});
+		btnNewButton_1.setBounds(353, 301, 89, 23);
+		contentPane.add(btnNewButton_1);
+		
+		
+		
+		
+	}
+}
