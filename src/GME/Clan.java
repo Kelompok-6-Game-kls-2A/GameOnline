@@ -35,7 +35,7 @@ public class Clan extends JFrame {
 	private String score;
 	private String jumlahMember;
 	private String member;
-
+ 
 	
 		public Clan(String namaclan, String lvl, String score, String jumlahMember, String member) throws HeadlessException {
 		super();
